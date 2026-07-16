@@ -1,0 +1,114 @@
+.game-board {
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+  position: relative;   /* VERY IMPORTANT */
+  margin: 20px auto;
+  background-color: #f4f4f4;
+}
+
+.snake-block {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  position: absolute;   /* VERY IMPORTANT */
+}
+.Walls
+{
+  width:20px;
+  height: 20px;
+  background-color: rgb(207, 158, 10);
+  position:absolute;
+}
+.fruit
+{
+  font-size: 22px;
+  position:absolute;
+}
+
+.Mode_btn {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 90px;
+}
+
+.Mode_btn button {
+    width: 180px;
+    height: 200px;
+    border: 2px solid #333;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Mode_btn button:hover {
+    transform: scale(1.08);
+    box-shadow: 15px 15px 15px rgba(253, 248, 248, 0.3);
+}
+
+.Mode_btn button img {
+    width: 180px;
+    height: 220px;
+    border-radius: 15px;
+    
+}
+
+.intro {
+    align-items: center;
+    margin: 20px 0;
+}
+
+.intro img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.intro h2 {
+    font-size: 40px;
+    margin: 0;
+    color: #6ee84c;
+    font-weight: bold;
+}
+
+.home
+{
+  width: 70px;
+  height:30px;
+  font-size:20px;
+  font-weight:bold;
+  margin-left:900px;
+  color: #f4eeec;
+
+}
+.home:hover
+{
+  background-color: #e27e54;
+}
+.Play_snake_btn
+{
+
+  width:80px;
+  height: 105px;
+  background-color: white;
+  border-radius: 10px;
+  font-size: medium;
+  font-weight: bold;
+}
+.Play_snake_btn img
+{
+  width:70px;
+  height:100px;
+  border-radius: 10px;
+}
+.Play_snake_btn :hover
+{
+  transform: scale(1.08);
+  box-shadow: 5px 5px 5px #89f885;
+}
