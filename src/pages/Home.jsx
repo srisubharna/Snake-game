@@ -1,24 +1,33 @@
-import {Link} from "react-router-dom";
-import Snake_Game_icon from "../assets/pictures/Game_icon.png";
+import { Link } from "react-router-dom";
+import Game_icon from "../assets/pictures/Game_icon.png";
+import "../App.css";
+
 function Home() {
     return (
-        <div className="home">
-            <div className="home-card">
-                <h1>2048 Game</h1>
+        <div className="home-container">
 
-                <input
-                    type="text"
-                    className="UserName"
-                    placeholder="Enter your name"
-                />
+            <img
+                src={Game_icon}
+                alt="Snake Game"
+                className="game-logo"
+            />
 
-                <br />
+            <h1>Snake Game</h1>
 
-                <Link to="/Game_page">
-                    <button>Play Now</button>
-                </Link>
-            </div>
+            <p className="description">
+                Control the snake, collect apples, avoid walls, and survive as
+                long as possible. Choose your difficulty level and challenge
+                yourself to achieve the highest score!
+            </p>
+
+            <Link to="/snake">
+                <button className="start-btn">
+                    Play Game
+                </button>
+            </Link>
+
         </div>
     );
 }
+
 export default Home;
